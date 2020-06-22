@@ -1,0 +1,138 @@
+@import 'reset.css';
+
+#game {
+    width: 100%;
+    height: 600px;
+    margin: 100px 0;
+    background-image: url(../images/sky.png);
+    position: relative;
+    overflow: hidden;
+}
+.bird{
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/birds.png);
+    transition: top 0.3s linear;
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    margin-left: -15px;
+}
+.score{
+    font-size: 25px;
+    font-weight: bolder;
+    color:#fff;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    display: none;
+}
+.start{
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.3s linear;
+}
+.start-blue{
+    font-size: 30px;
+    color: #0099ff;
+}
+.start-white{
+   font-size: 40px;
+   color: #fff;
+}
+.mask{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    z-index: 2;
+}
+.end{
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    text-align: center;
+    display: none;
+    z-index: 3;
+}
+.overgame{
+    font-size: 40px;
+    color: red;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.result{
+    font-size: 25px;
+    font-weight: bolder;
+    color: #f90;
+}
+.score-end{
+    font-size: 25px;
+    padding: 20px 0;
+    font-weight: bolder;
+    color: #fff;
+}
+.list{
+    font-size: 14px;
+}
+.item-rank{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #0099ff;
+    line-height: 16px;
+    margin-bottom: 10px;
+    color : #fff;
+}
+.item-score{
+    display: inline-block;
+    width: 20px;
+    text-align: left;
+    color: #0099ff;
+    margin: 0 10px;
+}
+.item-time{
+    color: #0099ff;
+}
+.reStart{
+    font-size: 25px;
+    color: #0099ff;
+    cursor: pointer;
+    margin-top: 20px;   
+    font-weight: bold;
+}
+.pipe{
+    width: 52px;
+    position: absolute;
+    z-index: 1;
+}
+.upPipe{
+    background-image: url(../images/pipe2.png);
+    background-position-y: bottom;
+    top: 0;
+}
+.downPipe{
+    background-image: url(../images/pipe1.png);
+    bottom: 0;
+}
+.one{
+    background: red;
+}
+.tow{
+    background: #ff7600;
+}
+.three{
+    background: green;
+}
